@@ -25,13 +25,37 @@ nav a { font-size: .93rem; text-decoration: none; }
 nav a:hover, .brand:hover { text-decoration: underline; }
 .hero { padding-block: clamp(2.75rem, 6vw, 5rem); }
 .intro { max-width: 46rem; }
+.research-profile {
+  display: flex;
+  align-items: center;
+  gap: clamp(.75rem, 3vw, 1.75rem);
+  margin-top: 1.35rem;
+}
+.research-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem .5rem;
+  align-content: center;
+  max-width: 27rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.research-keywords li {
+  padding: .16rem .65rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: #f2f7ef;
+  color: var(--accent);
+  font-size: .875rem;
+}
 .portrait {
   display: block;
   width: 8.25rem;
   height: 8.25rem;
   object-fit: cover;
   border-radius: .6rem;
-  margin-top: 1.35rem;
+  flex: 0 0 auto;
 }
 .eyebrow { color: var(--accent); font-size: .875rem; letter-spacing: .07em; text-transform: uppercase; font-weight: 650; }
 h1, h2, h3 { font-family: Georgia, serif; font-weight: 500; line-height: 1.12; margin: 0; }
@@ -131,4 +155,8 @@ footer { border-top: 1px solid var(--line); padding-block: 1.15rem; color: var(-
   .skills-layout { grid-template-columns: 1fr; }
   .research-grid { grid-template-columns: 1fr; }
   .wrap { width: calc(100% - 2rem); }
+}
+
+@media (max-width: 30rem) {
+  .portrait { width: 5.75rem; height: 5.75rem; }
 }
