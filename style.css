@@ -15,7 +15,10 @@ a:focus-visible { outline: 2px solid #884719; outline-offset: 4px; }
 .skip { position: absolute; left: 1rem; top: 1rem; padding: .5rem; background: white; transform: translateY(-250%); }
 .skip:focus { transform: none; }
 .top, .section-head, footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
-.top { padding-block: 1.25rem; border-bottom: 1px solid var(--line); }
+.site-header { background: #34513b; }
+.site-header a { color: #fff; }
+.site-header a:focus-visible { outline-color: #fff; }
+.top { padding-block: 1.25rem; }
 .brand { font-family: Georgia, serif; font-size: 1.25rem; font-weight: bold; text-decoration: none; }
 nav { display: flex; flex-wrap: wrap; column-gap: clamp(.9rem, 3vw, 2rem); row-gap: .3rem; }
 nav a { font-size: .93rem; text-decoration: none; }
@@ -70,7 +73,7 @@ p { margin: .8rem 0; }
 .trail { width: min(100%, 21rem); }
 .trail-photos { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; }
 .trail img { aspect-ratio: 4 / 5; }
-.kitchen { width: min(100%, 13rem); text-align: center; }
+.kitchen { width: min(100%, 14.5rem); text-align: center; }
 .food-flower {
   position: relative;
   aspect-ratio: 1;
